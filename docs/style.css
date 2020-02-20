@@ -7,8 +7,11 @@ h1, h2 {
 }
 
 #jumbo1 {
+  display: -webkit-box;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
 }
 
 .card{
@@ -21,7 +24,8 @@ h1, h2 {
 
 #shoplist h2{
     text-align: center;
-  text-decoration: underline blue;
+  -webkit-text-decoration: underline blue;
+          text-decoration: underline blue;
 
 }
 
@@ -37,4 +41,3 @@ ul{
   .print {display:block !important;
     /*visibility:visible;*/}
 }
-
