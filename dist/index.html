@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Pantry &amp; Fridge Tracker</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JS Pantry Tracker</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  </head>
+  <body onload="fetchPantry(); updateGroceryList()">
+    <div class="container">
+      <h1>Pantry & Fridge Tracking Web Application</h1>
+      <div id="jumbo1" class="jumbotron">
+        <div class="row">
+          <div class="col-md-6 noprint">
+            <h3>Food Item:</h3>
+            <form id="pantryInputForm">
+              <div class="form-group">
+                <label for="foodGroupInput">Group</label>
+                <select id="foodGroupInput" class="form-control">
+                  <option value="Pantry">Pantry</option>
+                  <option value="Fridge">Fridge</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="pantryItemInput">Name</label>
+                <input type="text" class="form-control" id="pantryItemInput" placeholder="Name of the item ...">
+              </div>
+              <div class="form-group">
+                <label for="pantryQuantityInput">Quantity</label>
+                <input type="number" id="pantryQuantityInput"></input>
+              </div>
+            <div class="form-group">
+              <label for="expirationInput">Expiration Date</label>
+              <input type="date" id="expirationInput"></input>
+            </div>
+            <button type="submit" class="btn btn-primary">Add</button>
+            </form>
+          </div>
+          <div class="col-md-6">
+            <div class="card text-white bg-dark mb-3">
+              <div id="shoplist" class="card-body print">
+                <h2>Dates List</h2>
+                <div class="card-body">
+                  <p class="card-text">Groceries with Dates to Buy:</p>
+                  <ul id="groceryList">
+                    
+                  </ul>
+                  <button class="noprint" onclick="window.print();return false;">Print List</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 noprint">
+        <div class="jumbotron">
+          <h2>Pantry</h2>
+          <div id="pantryList">
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 noprint">
+        <div class="jumbotron">
+          <h2>Fridge</h2>
+          <div id="fridgeList">
+          </div>
+        </div>
+      </div>
+     
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>

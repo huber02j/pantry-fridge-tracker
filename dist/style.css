@@ -1,0 +1,43 @@
+div {
+  font-family: "Times New Roman", Times, serif;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+#jumbo1 {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+}
+
+.card{
+  background-color: #CEF5FF;
+  padding: 10px;
+  border: 2px solid #1AD0FF;
+  border-radius: 8px;
+  
+}
+
+#shoplist h2{
+    text-align: center;
+  -webkit-text-decoration: underline blue;
+          text-decoration: underline blue;
+
+}
+
+ul{
+  padding: 4px;
+}
+
+#groceryList{
+  font-size: 15px;
+}
+@media print {
+  .noprint {display:none}
+  .print {display:block !important;
+    /*visibility:visible;*/}
+}
